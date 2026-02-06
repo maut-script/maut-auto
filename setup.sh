@@ -163,7 +163,7 @@ echo ""
 read -rp "  ╰─➤ Select option (1-2): " dns
 
 if test $dns -eq 1; then
-    wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/cf && chmod +x cf && ./cf
+    wget https://raw.githubusercontent.com/maut-script/maut-auto/master/ssh/cf && chmod +x cf && ./cf
 elif test $dns -eq 2; then
     read -rp "  ╰─➤ Enter your domain: " dom
     echo "IP=$dom" > /var/lib/ipvps.conf
@@ -193,7 +193,7 @@ echo -e "\e[36m│\e[0m                 \e[1;96mINSTALLING SSH WEBSOCKET\e[0m   
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 
 # ┌───────────────────────────────────────────────────────────────────┐
 # │                     XRAY CORE INSTALL                             │
@@ -203,8 +203,8 @@ echo -e "\e[36m│\e[0m                   \e[1;96mINSTALLING XRAY CORE\e[0m     
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 
 # Profile Configuration
@@ -247,7 +247,7 @@ if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 fi
 
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/maut-script/maut-auto/master/menu/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11

@@ -13,7 +13,7 @@ BPurple='\e[1;35m'
 NC='\e[0m'
 
 # Configure SSH
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/maut-script/maut-auto/master/sshd_config;
 systemctl restart sshd;
 clear;
 

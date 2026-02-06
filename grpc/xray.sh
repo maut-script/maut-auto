@@ -55,8 +55,8 @@ chmod +x /usr/local/bin/xray
 # Make Folder XRay
 mkdir -p /var/log/xray/
 #
-wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/grpc/menu/geosite.dat"
-wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/AutoScriptXray/grpc/ma/geoip.dat"
+wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/maut-script/maut-auto/master/grpc/menu/geosite.dat"
+wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/maut-script/maut-auto/AutoScriptXray/grpc/ma/geoip.dat"
 
 echo -e "\e[36m│\e[0m  \e[92m✓ Xray Core v$latest_version installed successfully\e[0m         \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
@@ -343,10 +343,10 @@ echo -e "\e[36m┌────────────────────�
 echo -e "\e[36m│\e[0m  \e[97mInstalling management scripts...\e[0m                           \e[36m│\e[0m"
 #
 cd /usr/bin
-wget -O addgrpc "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/grpc/addgrpc.sh"
-wget -O delgrpc "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/grpc/delgrpc.sh"
-wget -O renewgrpc "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/grpc/renewgrpc.sh"
-wget -O cekgrpc "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/grpc/cekgrpc.sh"
+wget -O addgrpc "https://raw.githubusercontent.com/maut-script/maut-auto/master/grpc/addgrpc.sh"
+wget -O delgrpc "https://raw.githubusercontent.com/maut-script/maut-auto/master/grpc/delgrpc.sh"
+wget -O renewgrpc "https://raw.githubusercontent.com/maut-script/maut-auto/master/grpc/renewgrpc.sh"
+wget -O cekgrpc "https://raw.githubusercontent.com/maut-script/maut-auto/master/grpc/cekgrpc.sh"
 
 chmod +x addgrpc
 chmod +x delgrpc

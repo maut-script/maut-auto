@@ -33,8 +33,8 @@ echo -e "\e[36m└────────────────────�
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mUpdating menu scripts...\e[0m                                \e[36m│\e[0m"
 echo -e "\e[36m├───────────────────────────────────────────────────────────────────┤\e[0m"
-wget -q -O /usr/bin/usernew https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/ssh/usernew.sh
-wget -q -O /usr/bin/trial https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/ssh/trial.sh
+wget -q -O /usr/bin/usernew https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/ssh/usernew.sh
+wget -q -O /usr/bin/trial https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/ssh/trial.sh
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/trial
 echo -e "\e[36m│\e[0m  \e[92m✓ Menu scripts updated successfully\e[0m                      \e[36m│\e[0m"
@@ -42,14 +42,14 @@ echo -e "\e[36m└────────────────────�
 
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mDownloading SlowDNS script...\e[0m                           \e[36m│\e[0m"
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 sleep 1
 echo -e "\e[36m│\e[0m  \e[92m✓ SlowDNS installation completed\e[0m                        \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
 
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mDownloading OpenVPN script...\e[0m                           \e[36m│\e[0m"
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/openvpn/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/openvpn/openvpn.sh && chmod +x openvpn.sh && ./openvpn.sh
 sleep 1
 echo -e "\e[36m│\e[0m  \e[92m✓ OpenVPN installation completed\e[0m                        \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"

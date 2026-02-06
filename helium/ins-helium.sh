@@ -19,7 +19,7 @@ echo -e "\e[36m└────────────────────�
 rm -rf /usr/bin/m-system
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mUpdating System Menu...\e[0m                                   \e[36m│\e[0m"
-wget -q -O /usr/bin/m-system https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/helium/menu/m-system.sh
+wget -q -O /usr/bin/m-system https://raw.githubusercontent.com/maut-script/maut-auto/master/helium/menu/m-system.sh
 chmod +x /usr/bin/m-system
 echo -e "\e[36m│\e[0m  \e[92m✓ System Menu updated successfully\e[0m                        \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
@@ -28,7 +28,7 @@ echo -e "\e[36m└────────────────────�
 rm -rf /usr/bin/wbmn
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mDownloading Webmin Panel...\e[0m                               \e[36m│\e[0m"
-wget -q -O /usr/bin/wbmn https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/helium/webmin/wbmn.sh
+wget -q -O /usr/bin/wbmn https://raw.githubusercontent.com/maut-script/maut-auto/master/helium/webmin/wbmn.sh
 chmod +x /usr/bin/wbmn
 echo -e "\e[36m│\e[0m  \e[92m✓ Webmin Panel downloaded successfully\e[0m                    \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
@@ -37,7 +37,7 @@ echo -e "\e[36m└────────────────────�
 rm -rf /usr/bin/helium
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mDownloading ADS Block Panel...\e[0m                           \e[36m│\e[0m"
-wget -q -O /usr/bin/helium https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/helium/helium.sh
+wget -q -O /usr/bin/helium https://raw.githubusercontent.com/maut-script/maut-auto/master/helium/helium.sh
 chmod +x /usr/bin/helium
 echo -e "\e[36m│\e[0m  \e[92m✓ ADS Block Panel downloaded successfully\e[0m                \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"

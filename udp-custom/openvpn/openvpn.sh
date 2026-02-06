@@ -28,14 +28,14 @@ echo -e "\e[36m└────────────────────�
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mConfiguring Squid...\e[0m                                   \e[36m│\e[0m"
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/openvpn/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 echo -e "\e[36m│\e[0m  \e[92m✓ Squid configuration complete\e[0m                         \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
 
 echo -e "\e[36m┌───────────────────────────────────────────────────────────────────┐\e[0m"
 echo -e "\e[36m│\e[0m  \e[97mInstalling OpenVPN...\e[0m                                  \e[36m│\e[0m"
-wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/udp-custom/openvpn/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/maut-script/maut-auto/master/udp-custom/openvpn/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 echo -e "\e[36m│\e[0m  \e[92m✓ OpenVPN installation complete\e[0m                        \e[36m│\e[0m"
 echo -e "\e[36m└───────────────────────────────────────────────────────────────────┘\e[0m"
 

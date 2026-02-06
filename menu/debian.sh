@@ -27,8 +27,8 @@ echo -e "\e[36m│\e[0m  \e[97m• Downloading latest menu files...\e[0m        
 sleep 1
 
 # Download updated files
-wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/clearcache.sh
-wget -q -O /usr/bin/menu https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/menu.sh
+wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/maut-script/maut-auto/master/menu/clearcache.sh
+wget -q -O /usr/bin/menu https://raw.githubusercontent.com/maut-script/maut-auto/master/menu/menu.sh
 
 sleep 1
 
