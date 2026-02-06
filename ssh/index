@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width,
+                initial-scale=1.0" />
+    <title>мαυт cσ∂єя VPN Panel</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/givpn/givpn/master/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        
+        body {
+            padding: 25px;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            color: #e0e0ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        .dark-mode {
+            background: linear-gradient(135deg, #000000 0%, #121212 100%);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(20, 20, 40, 0.7);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 2px solid #00ccff;
+            box-shadow: 0 0 30px rgba(0, 204, 255, 0.3);
+        }
+
+        .title {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #00ccff, #0066ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            color: #88d3ff;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .owner-badge {
+            background: rgba(0, 102, 255, 0.2);
+            border: 1px solid #00ccff;
+            border-radius: 10px;
+            padding: 15px 25px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .owner-name {
+            font-size: 1.4rem;
+            color: #00ffcc;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .owner-contact {
+            font-size: 1rem;
+            color: #88d3ff;
+            margin-top: 5px;
+        }
+
+        .toggle-btn {
+            background: linear-gradient(90deg, #0066ff, #00ccff);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 204, 255, 0.4);
+        }
+
+        .toggle-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 204, 255, 0.6);
+        }
+
+        .links-section {
+            background: rgba(30, 30, 60, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 1px solid rgba(0, 204, 255, 0.3);
+        }
+
+        .section-title {
+            color: #00ccff;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .badge {
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .badge-github {
+            background: #333;
+            color: white;
+            border-color: #666;
+        }
+
+        .badge-telegram {
+            background: #0088cc;
+            color: white;
+            border-color: #00aaff;
+        }
+
+        .badge-donate {
+            background: #ff6b35;
+            color: white;
+            border-color: #ff8c66;
+        }
+
+        .badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 204, 255, 0.2);
+        }
+
+        .version-badge {
+            background: rgba(0, 204, 255, 0.1);
+            border: 1px solid #00ccff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1.1rem;
+            color: #88d3ff;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            
+            .badge-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">мαυт cσ∂єя</h1>
+            <h2 class="subtitle">Premium VPN Panel & Auto-Script</h2>
+            
+            <div class="owner-badge">
+                <div class="owner-name">мαυт cσ∂єя</div>
+                <div class="owner-contact">Telegram: @maut_coder_bot</div>
+                <div class="owner-contact">Channel: t.me/maut_vpn</div>
+            </div>
+
+            <div>
+                <button class="toggle-btn" onclick="darkMode()">🌙 Toggle Dark Mode</button>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h3 class="section-title">🔗 Connect & Support</h3>
+            <div class="badge-container">
+                <a href="https://github.com/lalfulsk/" target="_blank" class="badge badge-github">GitHub Repository</a>
+                <a href="https://t.me/maut_coder_bot" target="_blank" class="badge badge-telegram">Telegram Contact</a>
+                <a href="https://t.me/maut_vpn" target="_blank" class="badge badge-telegram">Telegram Channel</a>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h3 class="section-title">❤️ Support Development</h3>
+            <div class="badge-container">
+                <a href="https://paypal.me/givpn11" target="_blank" class="badge badge-donate">PayPal Donation</a>
+                <a href="https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg" target="_blank" class="badge badge-donate">QRIS Donation</a>
+                <a href="https://www.blockchain.com/explorer/addresses/btc/3BE1deCJcuykuTHMzmrmNYgN51E24Hix8i" target="_blank" class="badge badge-donate">Bitcoin Donation</a>
+                <a href="https://www.blockchain.com/explorer/addresses/eth/0x3eb09df9a72e8e333e202116ff3eb348b3ebf554" target="_blank" class="badge badge-donate">Ethereum Donation</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="version-badge">
+                мαυт cσ∂єя VPN Panel • Premium Auto-Script • 2024 Edition
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
